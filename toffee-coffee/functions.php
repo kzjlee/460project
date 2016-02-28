@@ -150,3 +150,19 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+ // Enable support for post thumbnails
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 205, 205 );
+
+// Enable custom gravatar 
+
+add_filter( 'avatar_defaults', 'cd_custom_gravatar' );
+ 
+function cd_custom_gravatar ($avatar_defaults) {
+	// URL where the image file of gravatar hosted on phoenix 
+    $myavatar = 'http://phoenix.sheridanc.on.ca/~ccit3470/wp-content/themes/child_theme_lab/images/gravatar.png';
+    // wp/settings/discussion/select my customer gravatar 
+	$avatar_defaults[$myavatar] = __( 'my custom gravatar');
+    return $avatar_defaults;
+
