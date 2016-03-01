@@ -165,4 +165,4 @@ function cd_custom_gravatar ($avatar_defaults) {
     // wp/settings/discussion/select my customer gravatar 
 	$avatar_defaults[$myavatar] = __( 'my custom gravatar');
     return $avatar_defaults;
-
+}
