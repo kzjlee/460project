@@ -73,12 +73,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -306,12 +300,17 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
 }
+
+.site-content {
+	font-size: 1.125em;
+	line-height: 1.6em;
+	}
 
 h1,
 h2,
@@ -319,8 +318,19 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: 'Cabin Sketch', cursive;
 	clear: both;
+	line-height: 1.3em;
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
 }
+
+h1{ font-size: 2.4em;}
+h2{ font-size: 2.2em;}
+h3{ font-size: 2em;}
+h4{ font-size: 1.8em;}
+h5{ font-size: 1.6em;}
+h6{ font-size: 1.4em;}
 
 p {
 	margin-bottom: 1.5em;
@@ -966,6 +976,26 @@ Responsive
 
 .main-navigation.toggled ul {
 	display: block;
+}
+
+.site-main {
+	margin: 1.4em;
+	font-size: .8em;
+	line-height: 1.6em;
+}
+
+@media screen and (min-width: 30em) {
+
+	.site-main{
+		margin: 1.8em;
+	}
+}
+
+@media screen and (min-width: 40em) {
+
+	.site-main{
+		font-size: 1em;
+	}
 }
 
 @media screen and (max-width: 800px) {
