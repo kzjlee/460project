@@ -21,40 +21,37 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'toffee-coffee' ); ?></a>
 
-	<div class="header-area full">
-		<div class="main-page">
-<!--changing page-width to full-width -->
+<!-- add header image functionality -->
 
+	<?php if ( get_header_image() ) { ?>
+		<header id="masthead" class="site-header" style="background-image:url(<?php header_image(); ?>)" role="banner">
+	<?php } else { ?>
+		<header id="masthead" class="site-header" role="banner">
+	<?php } ?>
 
+		<div class="site-branding">
+			<?php
+			if ( is_front_page() && is_home() ) : ?>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<?php else : ?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			<?php
+			endif;
 
-				<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'toffee-coffee' ); ?></a>
+			$description = get_bloginfo( 'description', 'display' );
+			if ( $description || is_customize_preview() ) : ?>
+				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+			<?php
+			endif; ?>
+		</div><!-- .site-branding -->
 
-				<header id="masthead" class="site-header inner" role="banner">
-					<div class="site-branding">
-						<?php
-						if ( is_front_page() && is_home() ) : ?>
-							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php else : ?>
-							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-						<?php
-						endif;
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'toffee-coffee' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
 
-						$description = get_bloginfo( 'description', 'display' );
-						if ( $description || is_customize_preview() ) : ?>
-							<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-						<?php
-						endif; ?>
-					</div><!-- .site-branding -->
-
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'toffee-coffee' ); ?></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</nav><!-- #site-navigation -->
-				</header><!-- #masthead -->
-		</div> <!--#header-area full-->
-	</div><!--header inner -->
-
-	<div class="main-content-area full">
-		<div class="main-page">
-	<div id="content" class="site-content inner">
+	<div id="content" class="site-content">
