@@ -628,7 +628,7 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	text-align: center;
+	text-align: left;
 	font-family: 'Cabin Sketch', cursive;
 	font-size: 1.6em;
 	color: #FFF;
@@ -709,6 +709,7 @@ a:active {
 
 .sub-menu {
 	text-align: left;
+	width: 150px;
 }
 
 @media screen and (min-width: 800px) {
