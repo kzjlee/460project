@@ -693,8 +693,8 @@ a:active {
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.menu-toggle
+{
 	display: block;
 }
 
@@ -728,7 +728,7 @@ a:active {
 	}
 
 	.menu-toggle,
-	.main-navigation.toggled .nav-menu 
+	.main-navigation.toggled #primary-menu 
 	{
 		display: block;
 	}
@@ -763,11 +763,9 @@ a:active {
 		border-color: #FFF;
 	}
 	
-	.main-navigation a
-	{
-		display: block;
-		text-align: center;
-	}
+
+
+
 
 	#primary-menu > li:hover .sub-menu{
 		display: block;
@@ -1150,9 +1148,7 @@ object {
 Responsive
 --------------------------------------------------------------*/
 
-.main-navigation.toggled ul {
-	display: block;
-}
+
 
 .site-main {
 	margin: 1.4em;
