@@ -32,6 +32,30 @@
 		<header id="masthead" class="site-header" role="banner">
 	<?php } ?>
 
+
+<!-- add a sitewide homepage header button -->
+	<div class="header-logo">
+		<?php $site_title = get_bloginfo('name'); ?>
+		<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+		
+
+		<?php
+		//conditional statement displaying the site icon if there is one
+		if ( has_site_icon() ) {
+			$sitewide_icon = esc_url( get_site_icon_url(512) ); ?>
+			<img class="sitewide-icon" src="<?php echo $sitewide_icon; ?>" 
+		<?php } else { ?>
+
+			<div class="site-letter">
+					<?php echo substr($site_title, 0, 1); ?>
+			</div>
+			<?php } ?>
+		</a>
+	</div>
+
+
+
+
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>

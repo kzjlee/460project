@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Alex Tsai, Chungyu Lay, Keizac Lee
 Author URI: http://underscores.me/
 Description: Theme for CCT460 Assignment 2
-Version: 1.0.0
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: toffee-coffee
@@ -811,6 +811,38 @@ a:active {
 
 .site-branding {
 	text-align: center;
+}
+
+/* Homebutton */
+
+.header-logo{
+	position: relative;
+}
+
+.header-logo a{
+	position: absolute;
+	z-index: 10;
+	top: 1em;
+	left: 1em;
+	display: block;
+	width: 2.5em;
+	height: 2.5em;
+	background: #6F4E37;
+	border: 2.5px solid black;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.header-logo a: hover,
+.header-logo a: focus {
+	outline: 2px solid white;
+}
+
+.site-letter{
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1.3em;
 }
 
 /* styling the site title and making it uniform across pages */
