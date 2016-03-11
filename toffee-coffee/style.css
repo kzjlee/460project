@@ -63,7 +63,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 #primary {
-	float: left;
+	float: right;
 	padding-right: 50px;
 	width: 66.5%;
 }
@@ -611,31 +611,41 @@ a:active {
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 0;
-	padding-left: 0;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 .main-navigation li {
-	float: left;
+	display: inline-block;
 	position: relative;
+	text-align: center;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	text-align: center;
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 1.6em;
+	color: #FFF;
+	clear: both;
+
+
 }
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
+	background-color: #000;
 	position: absolute;
 	top: 1.5em;
-	left: -999em;
+	left: 1.5em;
 	z-index: 99999;
 }
 
 .main-navigation ul ul ul {
-	left: -999em;
+	left: -1.5em;
 	top: 0;
 }
 
@@ -693,7 +703,6 @@ a:active {
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-	margin: 0 0 1.5em;
 	overflow: hidden;
 }
 
@@ -1060,12 +1069,16 @@ Responsive
 	line-height: 1.6em;
 }
 
+/* This gives additional margin for the site on mobile devices */
+
 @media screen and (min-width: 30em) {
 
 	.site-main{
 		margin: 1.8em;
 	}
 }
+
+/* This changes the font size of main site content to make it easier to read on mobile devices */
 
 @media screen and (min-width: 40em) {
 
