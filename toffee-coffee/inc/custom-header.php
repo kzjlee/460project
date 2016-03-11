@@ -22,7 +22,7 @@
  */
 function toffee_coffee_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'toffee_coffee_custom_header_args', array(
-		'default-image'          => 'https://upload.wikimedia.org/wikipedia/commons/5/53/Roasted_Coffee_Beans_Texture.jpg',
+		'default-image'          => '',
 		'default-text-color'     => 'ffffff',
 		'width'                  => 1600,
 		'height'                 => 420,
