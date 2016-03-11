@@ -25,7 +25,7 @@ function toffee_coffee_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'toffee-coffee' ),
+		esc_html_x( 'Published By %s', 'post date', 'toffee-coffee' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
@@ -34,8 +34,12 @@ function toffee_coffee_posted_on() {
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
-
+	echo '<span class="byline">' . $byline . '</span><span class="posted_on"> ' . $posted_on . '</span>'; // WPCS: XSS OK.
+	if (! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		echo '<span class="comments-link">';
+		comments_popup_link( esc_html__( '&nbsp;Leave a comment here', 'toffee-coffee' ), esc_html__( '1 Comment', 'toffee-coffee' ), esc_html__( '% Comments', 'toffee-coffee' ) );
+		echo '</span>';
+	}
 }
 endif;
 
