@@ -614,6 +614,9 @@ a:active {
 	text-align: center;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	padding-left: 0;
+    margin-left: 0;
+    background-color: #000;
 }
 
 .main-navigation li {
@@ -630,8 +633,8 @@ a:active {
 	font-size: 1.6em;
 	color: #FFF;
 	clear: both;
-
-
+	line-height: 1;
+    padding: 0.5em 0;
 }
 
 .main-navigation ul ul {
@@ -685,19 +688,29 @@ a:active {
 .main-navigation .current-menu-ancestor > a {
 }
 
+#primary-menu .menu-item {
+	padding: 10px 20px;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
 
+	
+#primary-menu {
+	display: block;
+}
+
+#primary-menu > li:hover .sub-menu{
+	display: block;
+}
+
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
+}
 }
 
 .site-main .comment-navigation,
