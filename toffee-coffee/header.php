@@ -72,8 +72,16 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
+		
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'toffee-coffee' ); ?></button>
+
+			 <!-- Linking the header menu-toggle button to icon.png --> 
+
+			<button class="menu-toggle">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon.png" /></button><br clear="both">
+
+			
 
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class'     => 'nav-menu' ) ); ?>
