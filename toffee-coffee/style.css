@@ -1040,7 +1040,7 @@ a:active {
 
 .byline,
 .updated:not(.published) {
-	display: none;
+	display: inline;
 }
 
 .single .byline,
