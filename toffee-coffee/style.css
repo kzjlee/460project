@@ -18,6 +18,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+
+Followed Morten Rand-Hendriksen's Underscores tutorial on 
+http://www.lynda.com/WordPress-tutorials/WordPress-Building-Themes-from-Scratch-Using-Underscores/417653-2.html
+
 */
 
 /*--------------------------------------------------------------
@@ -981,13 +985,13 @@ a:active {
 #secondary{
 	position: relative;
 	padding: 1.6em 1.2em 0;
-	background-color: #cccccc;
+	background-color: #fff;
 }
 
 .widget {
 	margin: 0 0 1.5em;
 	padding: 1.6em;
-	background-color: #FFF;
+	background-color: #efefef;
 }
 
 @media screen and (min-width 800px){
@@ -1070,13 +1074,101 @@ a:active {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
-.comment-content a {
-	word-wrap: break-word;
+
+
+.comments-area {
+	margin: 4em 0;
 }
 
-.bypostauthor {
-	display: block;
+@media screen and (min-width: 40em) {
+	.comments-area {
+		margin: 4em 1em;
+	}
 }
+
+.comments-title {
+	margin-bottom: 2em;
+	font-size: 2em;
+	text-align: center;
+}
+
+.comment-list {
+	padding: 0;
+	margin: 0;
+}
+
+.comment-list,
+.comment-list ol {
+	list-style-type: none;
+}
+
+.comment-body {
+	border-bottom: 1px solid #333;
+	margin-bottom: 4em;
+}
+
+.comment-meta {
+	position: relative;
+	margin-left: 70px;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 80%;
+}
+
+.comment .avatar {
+	position: absolute;
+	left: -70px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+.comment .avatar {
+	top: -5px;
+}
+
+
+.comment-meta a {
+	text-decoration: none;
+}
+
+
+.comment-author {
+	font-size: 1.4em;
+	line-height: 1.3em;
+}
+
+.says {
+	font-size: 80%;
+}
+
+.comment-metadata {
+    margin-top: .2em;
+	padding-bottom: .5em;
+	font-size: .8em;
+	line-height: 1em;
+}
+
+.comment-metadata a {
+	color: #333333;
+}
+
+.reply {
+	margin-bottom: 1.5em;
+	text-align: right;
+}
+
+.reply a {
+	display: inline-block;
+	padding: .6em 1.4em;
+	font-family: 'Roboto', sans-serif;
+	font-size: 85%;
+	color: #333333;
+	line-height: 1em;
+	text-decoration: none;
+	border: 1px solid #333333;
+}
+
 
 /*--------------------------------------------------------------
 # Infinite scroll
