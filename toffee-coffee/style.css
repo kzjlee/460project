@@ -698,7 +698,7 @@ a:active {
 	display: block;
 }
 
-	
+
 #primary-menu {
 	display: block;
 }
@@ -1194,3 +1194,44 @@ Responsive
 		padding-left: 25px;
 	}
 }
+<<<<<<< Updated upstream
+=======
+
+
+
+.postimage{
+	display: inline-block;
+	border: 1px solid black;
+	vertical-align: top;
+	max-width: 200px;
+	float: none;
+	width: 100%;
+	height: 250px;
+}
+
+.grid-full,
+.grid-column{
+	display: inline-block;
+	vertical-align: top;
+	float: none;
+	width: 100%;
+	height: 350px;
+	text-align: left;
+}
+
+.grid-full {
+	max-width: 900px;
+}
+
+.grid-column {
+	max-width: 300px;
+}
+
+#content {
+	text-align: center;
+}
+
+#primary {
+	text-align: left;
+}
+>>>>>>> Stashed changes
