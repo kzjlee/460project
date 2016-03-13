@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+#Footer
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -72,7 +73,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	float: left;
 	width: 33.5%;
 }
-
 
 /*--------------------------------------------------------------
 # Normalize
@@ -977,9 +977,47 @@ a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+
+#secondary{
+	position: relative;
+	padding: 1.6em 1.2em 0;
+	background-color: #cccccc;
+}
+
 .widget {
 	margin: 0 0 1.5em;
+	padding: 1.6em;
+	background-color: #FFF;
 }
+
+@media screen and (min-width 800px){
+	#secondary {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 1.8em;
+	}
+
+	.widget{
+		float: left;
+		width: 300px;
+		margin: 0 0.9 1.8;
+	}
+}
+
+.widget-title{
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+.widget ul, .widget ol {
+	padding: .5em 0 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	list-style-type: none;
+}
+
+
 
 /* Make sure select elements fit in widgets. */
 .widget select {
@@ -1144,6 +1182,26 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+
+.site-footer{
+	padding: 3em 1em;
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+	color: #fff;
+	background-color: #000;
+	}
+
+.site-footer a{
+	color: #fff;
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 Responsive
