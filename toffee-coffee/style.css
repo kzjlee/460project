@@ -1042,6 +1042,28 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
+
+/* Post Meta -------------------------------------------------*/
+.entry-meta{
+	padding: 2em 0;
+	font-style: italic;
+	text-align: center;
+	background: #eee;
+}
+
+.byline,
+.posted-on,
+.entry-meta .comments-link{
+	display: block;
+	padding:  0;
+}
+
+.entry-meta a{
+	font-weight: 700;
+}
+
+
+
 .byline,
 .updated:not(.published) {
 	display: inline;
