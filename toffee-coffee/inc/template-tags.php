@@ -34,6 +34,11 @@ function toffee_coffee_posted_on() {
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
+	// Display the author avator in the meta tag for every posts. 
+	$author_id = get_the_author_meta( 'ID');
+	echo '<div class="author-avatar">' . get_avatar( $author_id) . '</div>';
+
+
 	echo '<span class="byline">' . $byline . '</span><span class="posted_on"> ' . $posted_on . '</span>'; // WPCS: XSS OK.
 	if (! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
