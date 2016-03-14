@@ -613,6 +613,8 @@ a:active {
 	width: 100%;
 }
 
+/* Styling main menu navigation, center menu and give padding and color*/
+
 .main-navigation ul {
 	display: none;
 	list-style: none;
@@ -703,6 +705,7 @@ a:active {
 	display: block;
 }
 
+/* Styling sub menu and hiding sub menu under primary menu until hover over*/
 
 #primary-menu {
 	display: block;
@@ -715,84 +718,6 @@ a:active {
 .sub-menu {
 	text-align: left;
 	width: 150px;
-}
-
-@media screen and (min-width: 800px) {
-	.menu-toggle {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 800px){
-
-	#primary-menu {
-		display: none;
-	}
-
-	.toggled #primary-menu{
-		display:block;
-	}
-
-	.menu-toggle,
-	.main-navigation.toggled #primary-menu
-	{
-		display: block;
-	}
-
-	.main-navigation #menu-main,
-	.main-navigation #menu-social
-	{
-		float: none;
-		text-align: center;
-		width: 100%;
-	}
-
-	.menu-toggle
-	{
-		display:block;
-		color: #FFF;
-		width: auto;
-		margin: auto;
-		text-align: center;
-	}
-
-	.main-navigation ul
-	{
-		display: none;
-	}
-
-	.main-navigation li
-	{
-		display: block;
-		width: 100%;
-		border-bottom: solid 1px;
-		border-color: #FFF;
-	}
-
-
-
-
-
-	#primary-menu > li:hover .sub-menu{
-		display: block;
-	}
-
-	.sidebar-widgets
-	{
-	background-color: #D5EBDD;
-	}
-
-	.blog #primary, .single #primary, .archive #primary
-	{
-		width: 100%;
-		margin:10px;
-	}
-
-	#secondary
-	{
-		width:100%;
-	}
-
 }
 
 .site-main .comment-navigation,
@@ -995,7 +920,7 @@ a:active {
 	background-color: #efefef;
 }
 
-@media screen and (min-width 800px){
+@media screen and (min-width: 800px){
 	#secondary {
 		display: flex;
 		flex-wrap: wrap;
@@ -1137,6 +1062,9 @@ a:active {
 	margin: 4em 0;
 }
 
+
+/* Enlarge comment area */ 
+
 @media screen and (min-width: 40em) {
 	.comments-area {
 		margin: 4em 1em;
@@ -1144,10 +1072,12 @@ a:active {
 }
 
 .comments-title {
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	font-size: 2em;
 	text-align: center;
 }
+
+/* Hiding list function */ 
 
 .comment-list {
 	padding: 0;
@@ -1169,8 +1099,10 @@ a:active {
 	margin-left: 70px;
 	font-family: 'Roboto', sans-serif;
 	font-style: italic;
-	font-size: 80%;
+	font-size: 90%;
 }
+
+/* Styling the gravatar, making it appear left of comment author */ 
 
 .comment .avatar {
 	position: absolute;
@@ -1183,6 +1115,8 @@ a:active {
 .comment .avatar {
 	top: -5px;
 }
+
+/* Styling meta of comment meta */ 
 
 
 .comment-meta a {
@@ -1210,6 +1144,8 @@ a:active {
 	color: #333333;
 }
 
+/* Styling the reply to look like a button */
+
 .reply {
 	margin-bottom: 1.5em;
 	text-align: right;
@@ -1217,7 +1153,7 @@ a:active {
 
 .reply a {
 	display: inline-block;
-	padding: .6em 1.4em;
+	padding: .7em 1.4em;
 	font-family: 'Roboto', sans-serif;
 	font-size: 85%;
 	color: #333333;
@@ -1415,6 +1351,94 @@ Responsive
 		padding-left: 25px;
 	}
 }
+
+/* Menu Responsive */
+
+/* Hides menu toggle button */
+@media screen and (min-width: 800px) {
+	.menu-toggle {
+		display: none;
+	}
+}
+
+/* Changes menu format to vertical and hides under a toggle button */
+
+@media screen and (max-width: 800px){
+
+	#primary-menu {
+		display: none;
+	}
+
+	.toggled #primary-menu{
+		display:block;
+	}
+
+	.menu-toggle,
+	.main-navigation.toggled #primary-menu
+	{
+		display: block;
+	}
+
+	.main-navigation #menu-main,
+	.main-navigation #menu-social
+	{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	.menu-toggle
+	{
+		display:block;
+		color: #FFF;
+		width: auto;
+		margin: auto;
+		text-align: center;
+	}
+
+	.main-navigation ul
+	{
+		display: none;
+	}
+
+	.main-navigation li
+	{
+		display: block;
+		width: 100%;
+		border-bottom: solid 1px;
+		border-color: #FFF;
+	}
+
+	#primary-menu > li:hover .sub-menu{
+		display: block;
+	}
+
+	.sidebar-widgets
+	{
+	background-color: #cdcdcd;
+	}
+
+	.blog #primary, .single #primary, .archive #primary
+	{
+		width: 100%;
+		margin:10px;
+	}
+
+	#secondary
+	{
+		width:100%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
 <<<<<<< Updated upstream
 =======
 
