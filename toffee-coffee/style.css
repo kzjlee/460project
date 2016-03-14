@@ -1438,11 +1438,21 @@ Responsive
 #entry-content img {
 	width: 200px;
 	height: 200px;
+	text-align: center;
 }
 
 .entry-content img {
 	width: 200px;
 	height: 200px;
+	text-align: center;
+}
+
+#content {
+	display: block;
+}
+
+.site-content {
+	display: block;
 }
 
 
