@@ -1043,13 +1043,30 @@ a:active {
 }
 
 
+/* Excerpt ---------------------------------------------------*/
+.excerptspot{
+	margin-bottom: 1em;
+}
+
+.excerptspot p{
+	font-size: 80%;
+	line-height: 1em;
+	text-align: center;
+	font-style: italic;
+}
+
 /* Post Meta -------------------------------------------------*/
 .entry-meta{
-	padding: 2em 0;
+	padding: 0;
 	font-style: italic;
 	text-align: center;
 	background: #e6e6e6;
 	color: #ffffff;
+}
+
+
+.author-avatar img{
+	border-radius: 50%;
 }
 
 .byline,
