@@ -933,7 +933,7 @@ a:active {
 	.widget{
 		float: left;
 		width: 300px;
-		margin: 0 0.9 1.8;
+		margin: 0 0.8em 1.8em;
 	}
 }
 
@@ -948,13 +948,35 @@ a:active {
 	font-family: 'Roboto', sans-serif;
 	list-style-type: none;
 }
-
-
-
 /* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
 }
+
+/*--------------------------------------------------------------
+# Footer Widget
+--------------------------------------------------------------*/
+
+#footer-sidebar {
+display:block;
+}
+
+#footer-sidebar1 {
+float: left;
+margin-left:5px;
+margin-right:5px;
+}
+
+#footer-sidebar2 {
+float: left;
+margin-right:5px;
+}
+
+#footer-sidebar3 {
+float: left;
+}
+
+
 
 /*--------------------------------------------------------------
 # Content
@@ -1297,16 +1319,14 @@ Footer
 	}
 
 .site-footer a{
-	color: #fff;
+	color: #FFF;
+	background-color: #000;
 }
-
 
 
 /*--------------------------------------------------------------
 Responsive
 --------------------------------------------------------------*/
-
-
 
 .site-main {
 	margin: 1.4em;
