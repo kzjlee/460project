@@ -1064,6 +1064,22 @@ a:active {
 	color: #ffffff;
 }
 
+.entry-meta a{
+	color: #000;
+}
+
+.entry-meta a:visited{
+	color: #000;
+	border-bottom: 1em solid;
+}
+
+.entry-meta a:hover,
+.entry-meta a:focus,
+.entry-meta a:active{
+	color: #000;
+
+}
+
 
 .author-avatar img{
 	border-radius: 50%;
