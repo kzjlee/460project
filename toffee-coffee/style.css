@@ -19,7 +19,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
-Followed Morten Rand-Hendriksen's Underscores tutorial on 
+Followed Morten Rand-Hendriksen's Underscores tutorial on
 http://www.lynda.com/WordPress-tutorials/WordPress-Building-Themes-from-Scratch-Using-Underscores/417653-2.html
 
 */
@@ -1393,7 +1393,7 @@ Responsive
 	#secondary{
 		float:none;
 		padding: 0;
-		width: 100%;
+		width: 90%;
 	}
 	.inner {
 		padding-right: 25px;
@@ -1409,10 +1409,10 @@ Responsive
 	display: inline-block;
 	border: 1px solid black;
 	vertical-align: top;
-	max-width: 200px;
+	max-width: 400px;
 	float: none;
-	width: 100%;
-	height: 250px;
+	width: 70%;
+	height: 300px;
 }
 
 .grid-full,
@@ -1420,17 +1420,19 @@ Responsive
 	display: inline-block;
 	vertical-align: top;
 	float: none;
-	width: 100%;
-	height: 350px;
+	width: 70%;
+	height: 400px;
 	text-align: left;
 }
 
 .grid-full {
-	max-width: 500px;
+	max-width: 400px;
+	width: 70%;
 }
 
 .grid-column {
-	max-width: 250px;
+	max-width: 350px;
+	width: 70%;
 }
 
 #content {
