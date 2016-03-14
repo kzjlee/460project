@@ -46,6 +46,7 @@ http://www.lynda.com/WordPress-tutorials/WordPress-Building-Themes-from-Scratch-
 # Infinite scroll
 # Media
 	## Captions
+	## Images
 	## Galleries
 #Footer
 --------------------------------------------------------------*/
@@ -1279,6 +1280,20 @@ object {
 
 .wp-caption-text {
 	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Images
+--------------------------------------------------------------*/
+
+img.aligncenter{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+img.alignright,
+img.alighleft{
+	margin-bottom: 1.5em;
 }
 
 /*--------------------------------------------------------------
