@@ -6,6 +6,14 @@
 	<header class="entry-header">
 		<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 
+		<!-- This is the excerpt area that shows before the entry meta-->
+		<?php 
+		if (has_excerpt( $post ->ID)){
+			echo '<div class="excerptspot">';
+			echo '<p>' . get_the_excerpt() . '</p>';
+			echo '</div>';
+		}
+		?>
 
 		<div class="entry-meta">
 			<?php toffee_coffee_posted_on(); ?>
