@@ -161,6 +161,10 @@ require get_template_directory() . '/inc/jetpack.php';
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 205, 205 );
 
+// Enable options.php
+
+require get_stylesheet_directory() . '/inc/options.php';
+
 // Enable custom gravatar 
 
 add_filter( 'avatar_defaults', 'cd_custom_gravatar' );
