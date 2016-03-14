@@ -45,7 +45,7 @@ else {
 <article id="post-<?php the_ID(); ?>" <?php post_class($gridClass); ?>>
 <h2 class="post-title"><?php the_title(); ?></h2>
 <div class="entry-content">
-	<?php the_post_thumbnail(array(100,100)); ?>
+	<?php the_post_thumbnail(array(300,300)); ?>
 <?php the_content(); ?>
 </div><!-- .entry-content -->
 </article><!-- #post-## -->
