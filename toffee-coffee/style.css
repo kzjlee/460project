@@ -1435,6 +1435,17 @@ Responsive
 	width: 70%;
 }
 
+#entry-content img {
+	width: 250px;
+	height: 250px;
+}
+
+.entry-content img {
+	width: 250px;
+	height: 250px;
+}
+
+
 #content {
 	text-align: center;
 }
