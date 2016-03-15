@@ -1,5 +1,6 @@
 <?php
-	
+
+//Followed a typography options tutorial at http://theme.fm/2011/08/providing-typography-options-in-your-wordpress-themes-1576/
 function cd_add_submenu() {
 		add_submenu_page( 'themes.php', 'Coffee Toffee Options Page', 'Theme Options', 'manage_options', 'my-theme-options', 'my_theme_options_page');
 	}
@@ -60,13 +61,57 @@ function cd_settings_init() {
 		'cd_options_page_section'  
 	);
 
+//Font control add_settings adapted to our options page
     add_settings_field( 
     	'primary-font', 
     	'Choose your primary font', 
     	'my_field_primary_font', 
-    	'theme-options',
+    	'theme_options',
     	'cd_options_page_section' 
     	);
+
+
+
+//Function to get available fonts
+function get_my_available_fonts() {
+    $fonts = array(
+        'Cabin Sketch' => array(
+            'name' => 'Cabin Sketch',
+            'import' => '',
+            'css' => "font-family: 'Cabin Sketch', cursive;"
+        ),
+        'Roboto' => array(
+            'name' => 'Roboto',
+            'import' => '',
+            'css' => "font-family: 'Roboto', sans-serif;"
+        ),
+        'arial' => array(
+            'name' => 'Arial',
+            'import' => '',
+            'css' => "font-family: Arial, sans-serif;"
+        )
+    );
+
+    return apply_filters( 'my_available_fonts', $fonts );
+    }
+
+//Creating the callback function
+    function my_field_primary_font() {
+    $options = (array) get_option( 'cd_options_settings' );
+    $fonts = get_my_available_fonts();
+    $current_font = 'Roboto';
+
+    if ( isset( $options['primary-font'] ) )
+        $current_font = $options['primary-font'];
+
+    ?>
+        <select name="cd_options_settings[primary-font]">
+        <?php foreach( $fonts as $font_key => $font ): ?>
+            <option <?php selected( $font_key == $current_font ); ?> value="<?php echo $font_key; ?>"><?php echo $font['name']; ?></option>
+        <?php endforeach; ?>
+        </select>
+    <?php
+}
 
 	function cd_text_field_render() { 
 		$options = get_option( 'cd_options_settings' );
@@ -108,24 +153,6 @@ function cd_settings_init() {
 		</select>
 	<?php
 	}
-
-	function my_field_primary_font() {
-    $options =  get_option( 'cd_options_settings' );
-    $fonts = get_my_available_fonts();
-    $current_font = 'arial';
-
-    if ( isset( $options['primary-font'] ) )
-        $current_font = $options['primary-font'];
-
-    ?>
-        <select name="cd_options_settings[primary-font]">
-        <?php foreach( $fonts as $font_key => $font ): ?>
-            <option <?php selected( $font_key == $current_font ); ?> value="<?php echo $font_key; ?>"><?php echo $font['name']; ?></option>
-        <?php endforeach; ?>
-        </select>
-    <?php
-}
-
 }
 	
 	function my_theme_options_page(){ 
