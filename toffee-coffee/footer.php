@@ -14,8 +14,9 @@
 	</div><!-- #content -->
 
 
-
 	<footer id="colophon" class="site-footer" role="contentinfo">
+
+
 
 				<div id="footer-sidebar" class="secondary">
 				<div id="footer-sidebar1">
@@ -41,11 +42,25 @@
 				</div>
 				</div>
 
+
+
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'toffee-coffee' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'toffee-coffee' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'toffee-coffee' ), 'toffee-coffee', '<a href="http://underscores.me/" rel="designer">Alex Tsai, Chungyu Lay, Keizac Lee</a>' ); ?>
 		</div><!-- .site-info -->
+		
+<?php $options = get_option( 'cd_options_settings' );
+echo $options['cd_text_field'] . '<br />';
+if (isset($options['cd_checkbox_field']) == 'on'){
+echo $options['cd_checkbox_field'] . '<br />';
+} else {
+echo 'off <br />';
+}
+echo $options['cd_radio_field'] . '<br />';
+echo $options['cd_textarea_field'] . '<br />';
+echo $options['cd_select_field'];
+?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
