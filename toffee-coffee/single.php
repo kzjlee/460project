@@ -25,7 +25,7 @@ get_header(); ?>
 			endif;
 
 			the_post_navigation();
-			
+
 
 
 		endwhile; // End of the loop.
