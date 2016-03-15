@@ -1467,6 +1467,9 @@ Responsive
 =======
 
 
+/*--------------------------------------------------------------
+Homepage styling
+--------------------------------------------------------------*/
 
 .postimage{
 	display: inline-block;
@@ -1518,61 +1521,57 @@ Responsive
 }
 
 .page-numbers {
-		margin-top: 100px;
+	margin-top: 100px;
     display: inline-block;
     padding: 0;
     margin: 0;
-		color: black;
+	color: black;
     text-align: center;
     padding: 8px 16px;
     text-decoration: inherit;;
 }
 
-.site-header	{
-	background-image:url(http://localhost:8888/install1/wp-content/uploads/2016/03/IMG_9996-2.png);
-}
-
-.site-content	{
-	background-image:url(http://localhost:8888/install1/wp-content/uploads/2016/03/cup.jpg);
-}
-
 .nav-previous{
 
-border-bottom: 1px solid #c0c0c0;
-border-top: 1px solid #c0c0c0;
-color: white;
-width: 10%;
-padding: 5px 10px;
-text-align: left;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
+	border-bottom: 1px solid #c0c0c0;
+	border-top: 1px solid #c0c0c0;
+	color: white;
+	width: 10%;
+	padding: 5px 10px;
+	text-align: left;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
 
 .nav-next{
 
-border-bottom: 1px solid #c0c0c0;
-border-top: 1px solid #c0c0c0;
-color: white;
-width: 10%;
-padding: 5px 10px;
-text-align: right;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
+	border-bottom: 1px solid #c0c0c0;
+	border-top: 1px solid #c0c0c0;
+	color: white;
+	width: 10%;
+	padding: 5px 10px;
+	text-align: right;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
 
 .entry-meta-new{
-background-color: #FFF;
-border-bottom: 1px solid #c0c0c0;
-border-top: 1px solid #c0c0c0;
-color: #000;
-width: 100%;
-height: 30%;
-padding: 5px 10px;
-text-align: center;
-text-decoration: none;
-font-size: 14px;
+	background-color: #FFF;
+	border-bottom: 1px solid #c0c0c0;
+	border-top: 1px solid #c0c0c0;
+	color: #000;
+	width: 100%;
+	height: 30%;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.entry-meta-new span {
+    padding: 0 6px 0 6px;
 }
 
 .author-avatar	{
