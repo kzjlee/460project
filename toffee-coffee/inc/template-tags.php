@@ -25,7 +25,7 @@ function toffee_coffee_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'on %s', 'post date', 'toffee-coffee' ),
+		esc_html_x( '%s', 'post date', 'toffee-coffee' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
