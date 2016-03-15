@@ -1557,6 +1557,12 @@ Homepage styling
 	font-size: 16px;
 }
 
+.nav-links{
+	padding: 0 10px;
+	border-bottom: 1px solid #c0c0c0;
+	border-top: 1px solid #c0c0c0;
+}
+
 .entry-meta-new{
 	background-color: #FFF;
 	border-bottom: 1px solid #c0c0c0;
