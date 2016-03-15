@@ -22,7 +22,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 Followed Morten Rand-Hendriksen's Underscores tutorial on
 http://www.lynda.com/WordPress-tutorials/WordPress-Building-Themes-from-Scratch-Using-Underscores/417653-2.html
 
-All images used are used under the Creative Commons license with permission to reuse and or edit. 
+All images used are used under the Creative Commons license with permission to reuse and or edit.
 
 */
 
@@ -1086,7 +1086,7 @@ float: left;
 }
 
 
-/* Enlarge comment area */ 
+/* Enlarge comment area */
 
 @media screen and (min-width: 40em) {
 	.comments-area {
@@ -1100,7 +1100,7 @@ float: left;
 	text-align: center;
 }
 
-/* Hiding list function */ 
+/* Hiding list function */
 
 .comment-list {
 	padding: 0;
@@ -1125,7 +1125,7 @@ float: left;
 	font-size: 90%;
 }
 
-/* Styling the gravatar, making it appear left of comment author */ 
+/* Styling the gravatar, making it appear left of comment author */
 
 .comment .avatar {
 	position: absolute;
@@ -1139,7 +1139,7 @@ float: left;
 	top: -5px;
 }
 
-/* Styling meta of comment meta */ 
+/* Styling meta of comment meta */
 
 
 .comment-meta a {
@@ -1535,7 +1535,29 @@ Responsive
 	background-image:url(http://localhost:8888/install1/wp-content/uploads/2016/03/cup.jpg);
 }
 
+.nav-previous{
+	background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+	width: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
 
+.nav-next{
+	background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+	width: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
 
 #content {
 	text-align: center;
