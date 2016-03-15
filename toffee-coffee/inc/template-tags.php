@@ -42,7 +42,7 @@ function toffee_coffee_posted_on() {
 	echo '<span class="byline">' . $byline . '</span><span class="posted_on"> ' . $posted_on . '</span>'; // WPCS: XSS OK.
 	if (! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( '&nbsp;Leave a comment here', 'toffee-coffee' ), esc_html__( '1 Comment', 'toffee-coffee' ), esc_html__( '% Comments', 'toffee-coffee' ) );
+		comments_popup_link( esc_html__( '0 Comments', 'toffee-coffee' ), esc_html__( '1 Comment', 'toffee-coffee' ), esc_html__( '% Comments', 'toffee-coffee' ) );
 		echo '</span>';
 	}
 }
