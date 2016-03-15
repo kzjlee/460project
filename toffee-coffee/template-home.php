@@ -45,11 +45,10 @@ else {
 <article id="post-<?php the_ID(); ?>" <?php post_class($gridClass); ?>>
 <h2 class="post-title"><?php the_title(); ?></h2>
 <div class="entry-content">
+	<div class="entry-meta">
+					<?php toffee_coffee_posted_on(); ?>
+				</div>
 	<?php the_post_thumbnail(array(250,250)); ?>
-
-<div class="entry-meta">
-				<?php toffee_coffee_posted_on(); ?>
-			</div>
 
 <?php the_content(); ?>
 </div><!-- .entry-content -->
