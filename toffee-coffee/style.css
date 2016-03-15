@@ -1345,6 +1345,7 @@ Responsive
 	.site-main{
 		margin: 1.8em;
 	}
+
 }
 
 /* This changes the font size of main site content to make it easier to read on mobile devices */
@@ -1585,6 +1586,9 @@ Homepage styling
 	display: none;
 }
 
+.site-content	{
+	background-image: url(http://phoenix.sheridanc.on.ca/~ccit3496/wp-content/uploads/2016/03/cup.jpg);
+}
 
 
 #content {
