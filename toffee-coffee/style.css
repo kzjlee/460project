@@ -1559,6 +1559,19 @@ Responsive
   font-size: 16px;
 }
 
+.entry-meta-new{
+	background-color: #4CAF50; /* Green */
+	border: 3px solid #c0c0c0;
+  color: white;
+	width: 100%;
+	height: 30%;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
 #content {
 	text-align: center;
 }
