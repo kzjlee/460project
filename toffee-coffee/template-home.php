@@ -48,6 +48,7 @@ else {
 	<div class="entry-meta-new">
 					<?php toffee_coffee_posted_on(); ?>
 				</div>
+
 	<?php the_post_thumbnail(array(250,250)); ?>
 
 <?php the_content(); ?>

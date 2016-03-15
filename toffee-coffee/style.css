@@ -1573,6 +1573,9 @@ font-size: 16px;
   font-size: 12px;
 }
 
+.author-avatar	{
+	display: none;
+}
 
 #content {
 	text-align: center;
