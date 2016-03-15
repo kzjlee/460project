@@ -1572,6 +1572,7 @@ Homepage styling
 
 .entry-meta-new span {
     padding: 0 3px 0 5px;
+    border-left: 1px solid #c0c0c0;
 }
 
 .author-avatar	{
