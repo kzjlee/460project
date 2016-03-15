@@ -46,6 +46,11 @@ else {
 <h2 class="post-title"><?php the_title(); ?></h2>
 <div class="entry-content">
 	<?php the_post_thumbnail(array(250,250)); ?>
+
+<div class="entry-meta">
+				<?php toffee_coffee_posted_on(); ?>
+			</div>
+
 <?php the_content(); ?>
 </div><!-- .entry-content -->
 </article><!-- #post-## -->
